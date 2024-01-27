@@ -2,6 +2,21 @@
 
 A technical interview question.
 
+## Running the project
+
+A makefile simplifies setup.
+
+- Start the Jupyter server:
+
+```bash
+make run
+```
+
+This will create a python virtual environment and start the Jupyter server.
+
+- Open the ```main.ipynb``` file in your browser and run all.
+
+
 ## Description
 
 You need to rebalance a crypto index fund that contains an asset cap. This means that the fund’s
@@ -11,9 +26,9 @@ sure no other asset exceeds its cap. This should work for any number of assets a
 calculate the percentage allocations and then capital allocations and amounts. A good sanity
 check is to look at the outputs with an unlimited cap (1 or 100%).
 
-## Example 1
+### Example 1
 
-### Input
+#### Input
 
 | Ticker | Market capitalisation | Price   |
 |--------|-----------------------|---------|
@@ -24,7 +39,7 @@ check is to look at the outputs with an unlimited cap (1 or 100%).
 Asset capital: 50%
 Total capital: 10 000
 
-### Output
+#### Output
 
 | Ticker | Amount    | Value  | %       |
 |--------|-----------|:-------|---------|
@@ -32,7 +47,7 @@ Total capital: 10 000
 | ETH    | 13.333333 | 333.33 | 33.3333 |
 | LTC    | 16.666667 | 166.67 | 16.6667 |
 
-## Example 2
+### Example 2
 
 > **_Note_** <br/>
 > This example contains an ‘impossible’
@@ -41,7 +56,7 @@ minimum cap of a third before all elements are
 set equal and this is what is reflected in the
 output.
 
-### Input
+#### Input
 
 | Ticker | Market capitalisation  |   Price |
 |:-------|:----------------------:|--------:|
@@ -52,7 +67,7 @@ output.
 Asset capital: 10%
 Total capital: 10 000
 
-### Output
+#### Output
 
 | Ticker |  Amount   | Value  |       % |
 |:-------|:---------:|:------:|--------:|

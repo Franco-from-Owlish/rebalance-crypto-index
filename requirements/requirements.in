@@ -3,4 +3,5 @@ jupyter
 
 # Data processing
 pandas
+pyarrow
 numpy
